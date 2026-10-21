@@ -1,4 +1,4 @@
-class LinearSearch{
+/*class LinearSearch{
     public static void main(String[] args){
         String[] arr = {"Python","JavaScript","Java","GoLang"};
         String target = "Javi";
@@ -9,7 +9,7 @@ class LinearSearch{
         }
     }
 }
- /* 
+
 import java.util.*;
 class Main {
     public static void main(String[] args) {
@@ -33,3 +33,23 @@ class Main {
     }
 }
 */
+class LinearSearch {
+
+    static boolean contains(int[] arr, int target) {
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {4, 7, 9, 12};
+
+        System.out.println(contains(arr, 9));
+        System.out.println(contains(arr, 15));
+    }
+}
