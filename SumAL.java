@@ -1,16 +1,11 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 class SumAL{
     public static void main(String[] args){
-        int sum = 0;
-        ArrayList <Integer> list = new ArrayList<>();
-        list.add(10);
-        list.add(20);
-        list.add(30);
-        list.add(40);
-        for(int i=0;i<list.size();i++){
-            sum+=list.get(i);
+        int[] arr = {5,1,5,2,1,2,1,4,1,6,9};
+        HashSet<Integer> set = new HashSet<>();
+        for(int i=0;i<arr.length;i++){
+            set.add(arr[i]);
         }
-        System.out.println(sum);
+        System.out.println(set);
     }
 }
